@@ -1,0 +1,15 @@
+
+
+  <ion-card  (click)="click(store.id)">
+    <ion-card-header class="header">
+      <ion-card-title class="title">{{store.title}}</ion-card-title>
+    </ion-card-header>
+    <img src="{{store.image}}" alt="" class="card-image">
+    
+  
+    <ion-card-content>
+      <span class="price">{{store.price | currency}}</span>
+    </ion-card-content>
+  </ion-card>
+
+

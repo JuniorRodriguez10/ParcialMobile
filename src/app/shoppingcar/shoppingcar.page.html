@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Shoppingcar</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home']"> 
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Shoppingcar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="card-container">
+
+  
+    <ion-card-header class="header">
+      <h1 class="title">{{detilisProduct.title}}</h1>
+    </ion-card-header>
+    <img src="{{detilisProduct.image}}" alt="" class="card-image">
+    
+  
+    <ion-card-content>
+      <p class="price">{{detilisProduct.price | currency}}</p>
+      <h6>{{detilisProduct.rating.rate}} <ion-icon name="star"></ion-icon></h6>
+
+   
+    </ion-card-content>
+  
+</div>
+  
+</ion-content>

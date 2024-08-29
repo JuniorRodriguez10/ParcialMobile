@@ -1,0 +1,7 @@
+{
+  "name": "parcialprogramacionmobil_rodriguez",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

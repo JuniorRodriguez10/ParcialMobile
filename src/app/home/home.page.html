@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      shopping store
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/shoppingcar']">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-content">
+    <ion-list>
+      <ion-select (ionChange)="onOptionSelected($event)" interface="action-sheet" label="Outline select" label-placement="floating" fill="outline">
+        <ion-select-option value="electronics">Electronics</ion-select-option>
+        <ion-select-option value="jewelery">Jewelery</ion-select-option>
+        <ion-select-option value="men's clothing">Men's clothing</ion-select-option>
+        <ion-select-option value="women's clothing">Women's clothing</ion-select-option>
+      </ion-select>
+    </ion-list>
+
+  </div>
+  <div class="j">
+    <app-card (doClick)="doNavigate($event)" *ngFor="let element of save" [store]="element">
+    </app-card>
+  </div>
+</ion-content>
